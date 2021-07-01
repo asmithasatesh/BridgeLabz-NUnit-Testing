@@ -8,7 +8,7 @@ namespace NUnit_Testing
         {
             //Get input from user
             Console.WriteLine("Enter program number to execute");
-            Console.WriteLine("1.NotedVendingMachine\n2.Print day of week\n3.TemperatureConversion\n4.MonthlyPayment");
+            Console.WriteLine("1.NotedVendingMachine\n2.Print day of week\n3.TemperatureConversion\n4.MonthlyPayment\n5.Newton SqareRoot");
             int ch = Convert.ToInt32(Console.ReadLine());
             switch (ch)
             {
@@ -23,6 +23,9 @@ namespace NUnit_Testing
                     break;
                 case 4:
                     MonthlyPayment.ReadInput();
+                    break;
+                case 5:
+                    NewtonSqrt.ReadInput();
                     break;
             }
         }
